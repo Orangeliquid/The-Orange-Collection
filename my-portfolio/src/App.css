@@ -1,0 +1,20 @@
+
+span {
+  display: inline-block; /* Ensure the span can be transformed */
+  margin: 0;
+  padding: 0;
+  transform: none; /* Reset any existing transform */
+  transition: none; /* Reset any existing transition */
+}
+
+.scatter-bo {
+  background-image: url('/src/assets/symbol-scatter-BO.svg');
+}
+
+.poly-bo {
+  background-image: url('/src/assets/polygon-scatter-BO.svg');
+}
+
+.poly-bo2 {
+  background-image: url('/src/assets/polygon-scatter-BO2.svg');
+}
