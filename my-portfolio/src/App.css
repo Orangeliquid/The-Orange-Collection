@@ -11,6 +11,10 @@ span {
   background-image: url('/src/assets/symbol-scatter-BO.svg');
 }
 
+.scatter-bo2 {
+  background-image: url('/src/assets/symbol-scatter-BO2.svg');
+}
+
 .poly-bo {
   background-image: url('/src/assets/polygon-scatter-BO.svg');
 }

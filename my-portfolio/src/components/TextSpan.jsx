@@ -10,7 +10,7 @@ const TextSpan = ({ children }) => {
             scale: [1, 1.4, 0.75, 1.25, 0.9, 1],
             transition: {
                 times: [0, 0.4, 0.6, 0.7, 0.8, 0.9],
-                duration: 1.5 // Adjust the duration as needed
+                duration: 1.5
             }
         }).then(() => {
             setIsPlaying(false);

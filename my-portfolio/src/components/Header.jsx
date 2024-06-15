@@ -1,9 +1,9 @@
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import TextSpan from "./TextSpan";
 import { FaBars, FaTimes } from "react-icons/fa";
-import StyledBox from "./StyledBox"; // Import StyledBox
+import StyledBox from "./StyledBox";
 
 function Header() {
   const headerRef = useRef(null);
@@ -111,29 +111,37 @@ function Header() {
             </motion.li>
           </ul>
         </nav>
-        {isMenuOpen && (
-          <div className="absolute m-10 top-full left-0 right-0 bg-opacity-90 flex flex-col items-center justify-center z-50 font-bold text-gray-50">
-            <StyledBox className="w-full max-w-md from-purple-600 to-orange-600">
-              <ul className="flex flex-col items-center space-y-4 text-2xl">
-                <li>
-                  <Link to="/" className="hover:opacity-75 font-montserra" onClick={toggleMenu}>
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/about" className="hover:opacity-75 font-montserrat" onClick={toggleMenu}>
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/contact" className="hover:opacity-75 font-montserrat" onClick={toggleMenu}>
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </StyledBox>
-          </div>
-        )}
+        <AnimatePresence>
+          {isMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -150 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -100 }}
+              transition={{ duration: 0.5 }}
+              className="absolute m-10 top-full left-0 right-0 bg-opacity-90 flex flex-col items-center justify-center z-50 font-bold text-gray-50"
+            >
+              <StyledBox className="w-full max-w-md from-purple-600 to-orange-600">
+                <ul className="flex flex-col items-center space-y-4 text-2xl">
+                  <li>
+                    <Link to="/" className="hover:opacity-75 font-montserrat" onClick={toggleMenu}>
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/about" className="hover:opacity-75 font-montserrat" onClick={toggleMenu}>
+                      About
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/contact" className="hover:opacity-75 font-montserrat" onClick={toggleMenu}>
+                      Contact
+                    </Link>
+                  </li>
+                </ul>
+              </StyledBox>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </StyledBox>
     </motion.header>
   );
