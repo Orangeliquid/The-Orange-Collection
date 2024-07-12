@@ -40,7 +40,7 @@ function Header() {
   return (
     <motion.header
       ref={headerRef}
-      className="px-8 py-8 bg-slate-900"
+      className="px-8 py-8"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       initial={{ opacity: 0, y: -50 }}

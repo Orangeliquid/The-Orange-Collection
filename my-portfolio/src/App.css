@@ -9,6 +9,7 @@ span {
 
 .scatter-bo {
   background-image: url('/src/assets/symbol-scatter-BO.svg');
+  z-index: 1;
 }
 
 .scatter-bo2 {
@@ -21,4 +22,34 @@ span {
 
 .poly-bo2 {
   background-image: url('/src/assets/polygon-scatter-BO2.svg');
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.glass-effect {
+  background: rgba( 255, 255, 255, 0 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  
+}
+
+.orange-glass {
+  background: rgba(253, 93, 0, 0.904);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+}
+
+.violet-glass {
+  background: rgba(139, 92, 246, 0.904);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
 }

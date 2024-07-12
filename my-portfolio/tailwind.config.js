@@ -28,6 +28,10 @@ module.exports = {
             transform: 'rotate(-0.5deg)',
           },
         },
+        wave: {
+          '0%': { 'background-position': '0% 50%' },
+          '100%': { 'background-position': '100% 50%' },
+        },
       },
       backgroundImage: {
         'scatter-BO': "url('/assets/symbol-scatter-BO.png')",
@@ -37,5 +41,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide'),
+  ],
 };
