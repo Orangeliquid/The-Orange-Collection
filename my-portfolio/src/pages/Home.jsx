@@ -28,7 +28,7 @@ function Home() {
   const [showGitHubProjects, setShowGitHubProjects] = useState(false);
 
   const handleAnimate = async () => {
-    // Reverse animations for the aliens returning to the ship
+    
     await animate("#ViewButton", { opacity: 0 }, { duration: 0.5 });
     setViewButton((prev) => ({ ...prev, ViewButton: false }));
     await animate("#OrangeAlien", { y: -200 }, { duration: 1 });

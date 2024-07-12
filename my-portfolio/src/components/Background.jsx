@@ -6,9 +6,8 @@ const Background = ({ endpoint, id }) => {
   const [isParticlesLoaded, setIsParticlesLoaded] = useState(false);
 
   useEffect(() => {
-    // Initialize particles engine
     initParticlesEngine(async (engine) => {
-      await loadSlim(engine); // Load particles configuration
+      await loadSlim(engine);
     }).then(() => {
       setIsParticlesLoaded(true);
     });
@@ -113,14 +112,14 @@ const Background = ({ endpoint, id }) => {
         },
         move: {
           enable: true,
-          direction: "bottom", // Make particles move from top to bottom
-          speed: 0.05, // Adjust speed for desired effect
+          direction: "bottom",
+          speed: 0.05, 
           outModes: {
             default: "out",
           },
           gravity: {
             enable: true,
-            acceleration: 0.05, // Adjust acceleration for desired effect
+            acceleration: 0.05,
           },
         },
       },

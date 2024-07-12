@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import GlowingWrapper from "../components/GlowingWrapper";
 import TextSpan from "../components/TextSpan";
-import ImageModal from "../components/ImageModal"; // Import ImageModal component
+import ImageModal from "../components/ImageModal";
 import {
   motion,
   useScroll,
@@ -32,18 +32,16 @@ const ProjectItem = ({ project }) => {
   });
 
   const [selectedTab, setSelectedTab] = useState(project.tabs[0]);
-  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal
-  const [modalImgSrc, setModalImgSrc] = useState(""); // State for modal image src
-  const [modalImgAlt, setModalImgAlt] = useState(""); // State for modal image alt text
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalImgSrc, setModalImgSrc] = useState("");
+  const [modalImgAlt, setModalImgAlt] = useState(""); 
 
-  // Function to open modal
   const handleOpenModal = (src, alt) => {
     setModalImgSrc(src);
     setModalImgAlt(alt);
     setIsModalOpen(true);
   };
 
-  // Function to close modal
   const handleCloseModal = () => {
     setIsModalOpen(false);
   };
@@ -135,7 +133,6 @@ const ProjectItem = ({ project }) => {
         </GlowingWrapper>
       </section>
 
-      {/* Render ImageModal */}
       <ImageModal
         isOpen={isModalOpen}
         onClose={handleCloseModal}

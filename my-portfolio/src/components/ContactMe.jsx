@@ -18,7 +18,6 @@ const ContactMe = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Obfuscated email
     const user = "yourname";
     const domain = "example.com";
     const email = `${user}@${domain}`;

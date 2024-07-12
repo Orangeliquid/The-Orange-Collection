@@ -1,4 +1,3 @@
-// src/components/ImageModal.jsx
 import React from "react";
 import GlowingWrapper from "../components/GlowingWrapper";
 
