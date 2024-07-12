@@ -1,5 +1,5 @@
 import React from "react";
-import { motion, AnimatePresence, useAnimate } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import GlowingWrapper from "../components/GlowingWrapper";
 import ContentBoxes from "../components/ContentBoxes";
 import OrangeAlien2D from "../assets/OrangeAlienFlat2d.jpg";
