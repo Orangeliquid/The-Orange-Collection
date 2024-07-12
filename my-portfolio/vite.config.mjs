@@ -9,7 +9,6 @@ export default defineConfig({
   plugins: [
     reactRefresh(),
     VitePWA({
-      // Your PWA options
     }),
   ],
   css: {

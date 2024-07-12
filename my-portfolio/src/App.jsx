@@ -5,7 +5,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Test from './pages/Test';
 import Header from './components/Header';
-import Background from './components/Background'; // Adjust the path as necessary
+import Background from './components/Background';
 import './App.css';
 
 function App() {
