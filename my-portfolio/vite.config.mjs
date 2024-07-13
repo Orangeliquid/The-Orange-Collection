@@ -8,8 +8,7 @@ import path from 'path';
 export default defineConfig({
   plugins: [
     reactRefresh(),
-    VitePWA({
-    }),
+    VitePWA(),
   ],
   css: {
     postcss: {
@@ -24,8 +23,20 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src'),
     },
   },
-  assetsInclude: ["**/*.PNG", "**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.gif", "**/*.svg"], // Include all relevant image types
+  build: {
+    outDir: 'dist',
+    assetsDir: '',
+  },
+  assetsInclude: [
+    "**/*.PNG",
+    "**/*.png",
+    "**/*.jpg",
+    "**/*.jpeg",
+    "**/*.gif",
+    "**/*.svg",
+  ],
   optimizeDeps: {
-    include: ['@tsparticles/react', '@tsparticles/engine']
-  }
+    include: ['@tsparticles/react', '@tsparticles/engine'],
+    exclude: ['react-icons/fa'],
+  },
 });
