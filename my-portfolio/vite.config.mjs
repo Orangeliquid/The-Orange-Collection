@@ -12,7 +12,11 @@ export default defineConfig({
   base: isProduction ? '/The-Orange-Collection/' : '/',
   plugins: [
     reactRefresh(),
-    VitePWA(),
+    VitePWA({
+      manifest: {
+        theme_color: "#ffffff" // Add your theme color here
+      }
+    }),
   ],
   css: {
     postcss: {
