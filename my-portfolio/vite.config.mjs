@@ -5,8 +5,11 @@ import tailwindcss from 'tailwindcss';
 import autoprefixer from 'autoprefixer';
 import path from 'path';
 
+// Determine the base URL based on the environment
+const isProduction = process.env.NODE_ENV === 'production';
+
 export default defineConfig({
-  base: '/',
+  base: isProduction ? '/The-Orange-Collection/' : '/',
   plugins: [
     reactRefresh(),
     VitePWA(),
