@@ -12,7 +12,7 @@ export default defineConfig({
     reactRefresh(),
     VitePWA({
       manifest: {
-        theme_color: "#000000"
+        theme_color: "#FFFFFF",
       }
     }),
   ],
