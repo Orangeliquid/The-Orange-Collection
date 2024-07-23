@@ -5,10 +5,9 @@ import tailwindcss from 'tailwindcss';
 import autoprefixer from 'autoprefixer';
 import path from 'path';
 
-const isProduction = process.env.NODE_ENV === 'production';
 
 export default defineConfig({
-  base: isProduction ? '/The-Orange-Collection/' : '/',
+  base: '/The-Orange-Collection/',
   plugins: [
     reactRefresh(),
     VitePWA({

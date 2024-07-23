@@ -9,9 +9,9 @@ import './App.css';
 
 function App() {
   const location = useLocation();
-  const isHomePage = location.pathname === "/";
-  const isAboutPage = location.pathname === "/about";
-  const isContactPage = location.pathname === "/contact";
+  const isHomePage = location.pathname === "/The-Orange-Collection/" || location.pathname === "/";
+  const isAboutPage = location.pathname === "/The-Orange-Collection/about" || location.pathname === "/about";
+  const isContactPage = location.pathname === "/The-Orange-Collection/contact" || location.pathname === "/contact";
 
   return (
     <div className="relative text-center overflow-hidden">
@@ -22,9 +22,9 @@ function App() {
         <Header />
         <main>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/The-Orange-Collection/" element={<Home />} />
+            <Route path="/The-Orange-Collection/about" element={<About />} />
+            <Route path="/The-Orange-Collection/contact" element={<Contact />} />
           </Routes>
         </main>
       </div>
