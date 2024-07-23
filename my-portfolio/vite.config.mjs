@@ -6,6 +6,7 @@ import autoprefixer from 'autoprefixer';
 import path from 'path';
 
 export default defineConfig({
+  base: '/',
   plugins: [
     reactRefresh(),
     VitePWA(),
