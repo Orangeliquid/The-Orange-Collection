@@ -5,7 +5,6 @@ import tailwindcss from 'tailwindcss';
 import autoprefixer from 'autoprefixer';
 import path from 'path';
 
-// Determine the base URL based on the environment
 const isProduction = process.env.NODE_ENV === 'production';
 
 export default defineConfig({
@@ -14,7 +13,7 @@ export default defineConfig({
     reactRefresh(),
     VitePWA({
       manifest: {
-        theme_color: "#ffffff" // Add your theme color here
+        theme_color: "#000000"
       }
     }),
   ],
