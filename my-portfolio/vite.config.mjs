@@ -5,14 +5,13 @@ import tailwindcss from 'tailwindcss';
 import autoprefixer from 'autoprefixer';
 import path from 'path';
 
-
 export default defineConfig({
   base: '/The-Orange-Collection/',
   plugins: [
     reactRefresh(),
     VitePWA({
       manifest: {
-        theme_color: "#FFFFFF",
+        theme_color: "#000000"
       }
     }),
   ],
