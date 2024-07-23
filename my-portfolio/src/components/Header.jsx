@@ -83,7 +83,7 @@ function Header() {
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 1 }}
             >
-              <Link to="/" className="hover:opacity-75 font-montserrat">
+              <Link to="/The-Orange-Collection/" className="hover:opacity-75 font-montserrat">
                 Home
               </Link>
             </motion.li>
@@ -92,7 +92,7 @@ function Header() {
               animate={{ opacity: 1 }}
               transition={{ delay: 1.2, duration: 1 }}
             >
-              <Link to="/about" className="hover:opacity-75 font-montserrat">
+              <Link to="/The-Orange-Collection/about" className="hover:opacity-75 font-montserrat">
                 About
               </Link>
             </motion.li>
@@ -103,7 +103,7 @@ function Header() {
               whileHover={{ scale: 1.1 }}
             >
               <Link
-                to="/contact"
+                to="/The-Orange-Collection/contact"
                 className="hover:opacity-75 font-montserrat"
               >
                 Contact
@@ -123,17 +123,17 @@ function Header() {
               <StyledBox className="w-full max-w-md from-purple-600 to-orange-600">
                 <ul className="flex flex-col items-center space-y-4 text-2xl">
                   <li>
-                    <Link to="/" className="hover:opacity-75 font-montserrat" onClick={toggleMenu}>
+                    <Link to="/The-Orange-Collection/" className="hover:opacity-75 font-montserrat" onClick={toggleMenu}>
                       Home
                     </Link>
                   </li>
                   <li>
-                    <Link to="/about" className="hover:opacity-75 font-montserrat" onClick={toggleMenu}>
+                    <Link to="/The-Orange-Collection/about" className="hover:opacity-75 font-montserrat" onClick={toggleMenu}>
                       About
                     </Link>
                   </li>
                   <li>
-                    <Link to="/contact" className="hover:opacity-75 font-montserrat" onClick={toggleMenu}>
+                    <Link to="/The-Orange-Collection/contact" className="hover:opacity-75 font-montserrat" onClick={toggleMenu}>
                       Contact
                     </Link>
                   </li>
