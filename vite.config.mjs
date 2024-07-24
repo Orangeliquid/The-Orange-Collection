@@ -6,7 +6,7 @@ import autoprefixer from 'autoprefixer';
 import path from 'path';
 
 export default defineConfig({
-  base: '/',
+  base: '/The-Orange-Collection/', // Update base path for GitHub Pages
   plugins: [
     reactRefresh(),
     VitePWA({
