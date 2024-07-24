@@ -6,7 +6,7 @@ import autoprefixer from 'autoprefixer';
 import path from 'path';
 
 export default defineConfig({
-  base: '/The-Orange-Collection/',
+  base: '/',
   plugins: [
     reactRefresh(),
     VitePWA({
