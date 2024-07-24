@@ -25,6 +25,10 @@ function App() {
             <Route path="/The-Orange-Collection/" element={<Home />} />
             <Route path="/The-Orange-Collection/about" element={<About />} />
             <Route path="/The-Orange-Collection/contact" element={<Contact />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<Home />} /> {/* Fallback route to handle 404 */}
           </Routes>
         </main>
       </div>
