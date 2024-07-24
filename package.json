@@ -1,7 +1,7 @@
 {
   "homepage": "https://orangeliquid.github.io/The-Orange-Collection/",
   "name": "my-portfolio",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
