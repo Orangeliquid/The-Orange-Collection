@@ -30,7 +30,7 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    assetsDir: '',
+    assetsDir: 'assets',
   },
   assetsInclude: [
     "**/*.PNG",
